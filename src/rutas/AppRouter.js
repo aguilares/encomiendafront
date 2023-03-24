@@ -1,33 +1,11 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Check from './check';
-import Formulario from '../login/login'
-// import Registro from '../login/registro'
 import React from 'react';
 
 import PublicRoute from './publicRoute';
 
-// import Nav from '../componentes/home';
-import Usuario from '../componentes/usuario';
-import ItemServicio from '../componentes/itemServicio';
-import Solicitar from '../componentes/solicitar';
 
-import AtorizarSolicitud from '../componentes/autorizarSolicitud';
-import RegistrarSolicitud from '../componentes/registrarSolicitud';
-import Resultado from '../componentes/resultados';
-
-import Registrame from '../componentes/registrarme'
-
-import ReportesEncargadoSP from '../componentes/reportes/reportesEncargadoSP'
-import ReportesSolicitante from '../componentes/reportes/reportesSolicitante'
-import ReportesTecnico from '../componentes/reportes/reportesTecnico'
-
-
-
-import MiPerfil from '../componentes/miPerfil'
-import Informaciones from '../componentes/informacion'
-import Area from '../componentes/area'
-import Servicio from '../componentes/servicio'
-import Seguros from '../componentes/seguro'
+import Inicio from '../public/inicio'
 import { useEffect } from "react";
 
 
@@ -84,28 +62,7 @@ export default function AppRouter() {
       <div onClick={handleClick} onKeyPress={handleKeyPress} >
 
         <Switch>
-          <PublicRoute exact path="/" component={Formulario} />
-          <PublicRoute exact path="/registrame" component={Registrame} />
-
-          <Check exact path='/usuarios' component={Usuario} />
-          <Check exact path='/area' component={Area} />
-          <Check exact path='/servicios' component={Servicio} />
-          <Check exact path='/seguros' component={Seguros} />
-
-          <Check exact path='/autorizarsolicitud' component={AtorizarSolicitud} />
-          <Check exact path='/reportesEncargadoSP' component={ReportesEncargadoSP} />
-
-
-
-          <Check exact path='/reportesSolicitante' component={ReportesSolicitante} />
-          <Check exact path='/solicitudes' component={Solicitar} />
-
-          <Check exact path='/resultados' component={Resultado} />
-          <Check exact path='/itemservicio' component={ItemServicio} />
-          <Check exact path='/miPerfil' component={MiPerfil} />
-          <Check exact path='/Hospital' component={Informaciones} />
-          <Check exact path='/reportesTecnico' component={ReportesTecnico} />
-          
+          <PublicRoute exact path="/" component={Inicio} />
 
           <Route exact path="*" component={E500} />
 

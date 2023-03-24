@@ -1,0 +1,54 @@
+.header {
+    width: 100%;
+    height: 100px;
+}
+
+.imgdimen {
+    width: 100px;
+    height: 100px;
+}
+
+
+
+/* carrucel */
+
+#conteItemsCarrucel {
+    border: 5px solid black;
+    height: 200px;
+    overflow: hidden;
+}
+
+.itemCarrucel {
+    border: 1px solid black;
+    height: 100%;
+    position: relative;
+
+}
+
+.imagenCarrucel {
+    background-color: rgb(131, 218, 218);
+    height: 100%;
+}
+
+.flechasCarrucel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+#imagenCarrucel-1{
+    background-color: rgb(164, 74, 199);
+}
+
+#imagenCarrucel-2{
+    background-color: rgb(80, 110, 209);
+}
+
+#imagenCarrucel-3{
+    background-color: rgb(220, 130, 82);
+}
